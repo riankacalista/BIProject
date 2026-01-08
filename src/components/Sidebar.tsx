@@ -37,11 +37,18 @@ export default function Sidebar() {
       </nav>
 
       <div className="absolute bottom-4 left-4 right-4">
-        <div className="bg-gray-800 rounded-lg p-4">
+        <a 
+          href="https://www.kaggle.com/datasets/bhanupratapbiswas/superstore-sales" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors"
+        >
           <p className="text-gray-400 text-xs">Data Source</p>
-          <p className="text-white text-sm font-medium">Kaggle Superstore</p>
+          <p className="text-white text-sm font-medium hover:text-blue-400 transition-colors">
+            Kaggle Superstore →
+          </p>
           <p className="text-gray-500 text-xs mt-1">9,994 records</p>
-        </div>
+        </a>
       </div>
     </aside>
   );
